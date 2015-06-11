@@ -13,6 +13,13 @@
 		4BCA10911B2963BC00909178 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA10901B2963BC00909178 /* Images.xcassets */; };
 		4BCA10941B2963BC00909178 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA10921B2963BC00909178 /* LaunchScreen.xib */; };
 		4BCA10A01B2963BC00909178 /* SwiftSideMenuBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA109F1B2963BC00909178 /* SwiftSideMenuBarTests.swift */; };
+		4BCA10AA1B296D1500909178 /* nature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA10A91B296D1500909178 /* nature.jpg */; };
+		4BCA10AC1B296EB800909178 /* SideMenuNavigationControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA10AB1B296EB800909178 /* SideMenuNavigationControllerViewController.swift */; };
+		4BCA10AE1B29701500909178 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA10AD1B29701500909178 /* SideMenu.swift */; };
+		4BCA10B01B2975DB00909178 /* MyNavigationControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA10AF1B2975DB00909178 /* MyNavigationControllerViewController.swift */; };
+		4BCA10B21B29766B00909178 /* MyMenuTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA10B11B29766B00909178 /* MyMenuTableTableViewController.swift */; };
+		4BCA10B41B29783200909178 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA10B31B29783200909178 /* menu.png */; };
+		4BCA10B61B2978AD00909178 /* screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA10B51B2978AD00909178 /* screen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,13 @@
 		4BCA10991B2963BC00909178 /* SwiftSideMenuBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSideMenuBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BCA109E1B2963BC00909178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BCA109F1B2963BC00909178 /* SwiftSideMenuBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSideMenuBarTests.swift; sourceTree = "<group>"; };
+		4BCA10A91B296D1500909178 /* nature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = nature.jpg; path = ../../../../Desktop/nature.jpg; sourceTree = "<group>"; };
+		4BCA10AB1B296EB800909178 /* SideMenuNavigationControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuNavigationControllerViewController.swift; sourceTree = "<group>"; };
+		4BCA10AD1B29701500909178 /* SideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		4BCA10AF1B2975DB00909178 /* MyNavigationControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationControllerViewController.swift; sourceTree = "<group>"; };
+		4BCA10B11B29766B00909178 /* MyMenuTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMenuTableTableViewController.swift; sourceTree = "<group>"; };
+		4BCA10B31B29783200909178 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = ../../../../Desktop/menu.png; sourceTree = "<group>"; };
+		4BCA10B51B2978AD00909178 /* screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +91,19 @@
 		4BCA10861B2963BC00909178 /* SwiftSideMenuBar */ = {
 			isa = PBXGroup;
 			children = (
+				4BCA10B31B29783200909178 /* menu.png */,
+				4BCA10B51B2978AD00909178 /* screen.png */,
+				4BCA10A91B296D1500909178 /* nature.jpg */,
 				4BCA10891B2963BC00909178 /* AppDelegate.swift */,
 				4BCA108B1B2963BC00909178 /* ViewController.swift */,
 				4BCA108D1B2963BC00909178 /* Main.storyboard */,
 				4BCA10901B2963BC00909178 /* Images.xcassets */,
 				4BCA10921B2963BC00909178 /* LaunchScreen.xib */,
 				4BCA10871B2963BC00909178 /* Supporting Files */,
+				4BCA10AB1B296EB800909178 /* SideMenuNavigationControllerViewController.swift */,
+				4BCA10AD1B29701500909178 /* SideMenu.swift */,
+				4BCA10AF1B2975DB00909178 /* MyNavigationControllerViewController.swift */,
+				4BCA10B11B29766B00909178 /* MyMenuTableTableViewController.swift */,
 			);
 			path = SwiftSideMenuBar;
 			sourceTree = "<group>";
@@ -192,6 +213,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BCA10AA1B296D1500909178 /* nature.jpg in Resources */,
+				4BCA10B61B2978AD00909178 /* screen.png in Resources */,
+				4BCA10B41B29783200909178 /* menu.png in Resources */,
 				4BCA108F1B2963BC00909178 /* Main.storyboard in Resources */,
 				4BCA10941B2963BC00909178 /* LaunchScreen.xib in Resources */,
 				4BCA10911B2963BC00909178 /* Images.xcassets in Resources */,
@@ -212,8 +236,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BCA10AC1B296EB800909178 /* SideMenuNavigationControllerViewController.swift in Sources */,
 				4BCA108C1B2963BC00909178 /* ViewController.swift in Sources */,
 				4BCA108A1B2963BC00909178 /* AppDelegate.swift in Sources */,
+				4BCA10AE1B29701500909178 /* SideMenu.swift in Sources */,
+				4BCA10B01B2975DB00909178 /* MyNavigationControllerViewController.swift in Sources */,
+				4BCA10B21B29766B00909178 /* MyMenuTableTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
