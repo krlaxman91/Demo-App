@@ -20,6 +20,13 @@
 		4BCA10B21B29766B00909178 /* MyMenuTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA10B11B29766B00909178 /* MyMenuTableTableViewController.swift */; };
 		4BCA10B41B29783200909178 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA10B31B29783200909178 /* menu.png */; };
 		4BCA10B61B2978AD00909178 /* screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA10B51B2978AD00909178 /* screen.png */; };
+		4BCA10B81B29905400909178 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA10B71B29905400909178 /* Login.swift */; };
+		4BCA10BC1B2995F700909178 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA10BB1B2995F700909178 /* RegisterViewController.swift */; };
+		4BCA10BE1B2996EF00909178 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA10BD1B2996EF00909178 /* ViewController4.swift */; };
+		4BCA10C01B299AD700909178 /* login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA10BF1B299AD700909178 /* login.jpg */; };
+		4BCA10C41B29A16000909178 /* loginImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA10C31B29A16000909178 /* loginImage.png */; };
+		4BCA10C61B29A2D900909178 /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA10C51B29A2D900909178 /* email.png */; };
+		4BCA10C81B29A2DE00909178 /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA10C71B29A2DE00909178 /* password.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +57,13 @@
 		4BCA10B11B29766B00909178 /* MyMenuTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMenuTableTableViewController.swift; sourceTree = "<group>"; };
 		4BCA10B31B29783200909178 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = ../../../../Desktop/menu.png; sourceTree = "<group>"; };
 		4BCA10B51B2978AD00909178 /* screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen.png; sourceTree = "<group>"; };
+		4BCA10B71B29905400909178 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		4BCA10BB1B2995F700909178 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		4BCA10BD1B2996EF00909178 /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		4BCA10BF1B299AD700909178 /* login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login.jpg; sourceTree = "<group>"; };
+		4BCA10C31B29A16000909178 /* loginImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginImage.png; sourceTree = "<group>"; };
+		4BCA10C51B29A2D900909178 /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
+		4BCA10C71B29A2DE00909178 /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,11 +105,9 @@
 		4BCA10861B2963BC00909178 /* SwiftSideMenuBar */ = {
 			isa = PBXGroup;
 			children = (
-				4BCA10B31B29783200909178 /* menu.png */,
-				4BCA10B51B2978AD00909178 /* screen.png */,
-				4BCA10A91B296D1500909178 /* nature.jpg */,
+				4BCA10BA1B29926600909178 /* View Controllers */,
+				4BCA10B91B29924900909178 /* Image */,
 				4BCA10891B2963BC00909178 /* AppDelegate.swift */,
-				4BCA108B1B2963BC00909178 /* ViewController.swift */,
 				4BCA108D1B2963BC00909178 /* Main.storyboard */,
 				4BCA10901B2963BC00909178 /* Images.xcassets */,
 				4BCA10921B2963BC00909178 /* LaunchScreen.xib */,
@@ -131,6 +143,31 @@
 				4BCA109E1B2963BC00909178 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BCA10B91B29924900909178 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				4BCA10C71B29A2DE00909178 /* password.png */,
+				4BCA10C51B29A2D900909178 /* email.png */,
+				4BCA10BF1B299AD700909178 /* login.jpg */,
+				4BCA10B51B2978AD00909178 /* screen.png */,
+				4BCA10A91B296D1500909178 /* nature.jpg */,
+				4BCA10B31B29783200909178 /* menu.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		4BCA10BA1B29926600909178 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BCA10C31B29A16000909178 /* loginImage.png */,
+				4BCA10B71B29905400909178 /* Login.swift */,
+				4BCA108B1B2963BC00909178 /* ViewController.swift */,
+				4BCA10BB1B2995F700909178 /* RegisterViewController.swift */,
+				4BCA10BD1B2996EF00909178 /* ViewController4.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,10 +252,14 @@
 			files = (
 				4BCA10AA1B296D1500909178 /* nature.jpg in Resources */,
 				4BCA10B61B2978AD00909178 /* screen.png in Resources */,
+				4BCA10C81B29A2DE00909178 /* password.png in Resources */,
 				4BCA10B41B29783200909178 /* menu.png in Resources */,
 				4BCA108F1B2963BC00909178 /* Main.storyboard in Resources */,
 				4BCA10941B2963BC00909178 /* LaunchScreen.xib in Resources */,
+				4BCA10C61B29A2D900909178 /* email.png in Resources */,
+				4BCA10C41B29A16000909178 /* loginImage.png in Resources */,
 				4BCA10911B2963BC00909178 /* Images.xcassets in Resources */,
+				4BCA10C01B299AD700909178 /* login.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +278,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BCA10AC1B296EB800909178 /* SideMenuNavigationControllerViewController.swift in Sources */,
+				4BCA10B81B29905400909178 /* Login.swift in Sources */,
 				4BCA108C1B2963BC00909178 /* ViewController.swift in Sources */,
+				4BCA10BC1B2995F700909178 /* RegisterViewController.swift in Sources */,
+				4BCA10BE1B2996EF00909178 /* ViewController4.swift in Sources */,
 				4BCA108A1B2963BC00909178 /* AppDelegate.swift in Sources */,
 				4BCA10AE1B29701500909178 /* SideMenu.swift in Sources */,
 				4BCA10B01B2975DB00909178 /* MyNavigationControllerViewController.swift in Sources */,

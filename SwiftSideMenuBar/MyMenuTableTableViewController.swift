@@ -10,6 +10,10 @@ import UIKit
 
 class MyMenuTableViewController: UITableViewController {
     var selectedMenuItem : Int = 0
+    
+    
+    var arrItem :[String] = ["Home" , "Login" , "Register" , "Settings"];
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -55,7 +59,11 @@ class MyMenuTableViewController: UITableViewController {
             cell!.selectedBackgroundView = selectedBackgroundView
         }
         
-        cell!.textLabel?.text = "ViewController #\(indexPath.row+1)"
+      //  cell!.textLabel?.text = "ViewController #\(indexPath.row+1)"
+        
+        cell!.textLabel?.text = arrItem[indexPath.row]
+        cell?.textLabel?.textColor = UIColor.whiteColor()
+        cell?.textLabel?.font = UIFont.boldSystemFontOfSize(18)
         
         return cell!
     }
