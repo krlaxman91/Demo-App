@@ -205,35 +205,77 @@ class RegisterViewController: UIViewController , UITextFieldDelegate {
         if textField == firstNameFeild
             
         {
-            firstNameFeild.resignFirstResponder()
+            if firstNameFeild.text.isEmpty
+            {
+                let alert = UIAlertController(title: "Hi", message: "First Name can't be empty.", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
+            else
+            {
+                firstNameFeild.resignFirstResponder()
+                lastNameFeild.becomeFirstResponder()
+            }
             
-            
-            lastNameFeild.becomeFirstResponder()
         }
       else if textField == lastNameFeild
         {
-        lastNameFeild.resignFirstResponder()
-            emailFeild.becomeFirstResponder()
+            if lastNameFeild.text.isEmpty
+            {
+                let alert = UIAlertController(title: "Hi", message: "Last Name can't be empty.", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
+            else
+            {
+                lastNameFeild.resignFirstResponder()
+                emailFeild.becomeFirstResponder()
+            }
         }
         
         else if textField == emailFeild
         {
-            emailFeild.resignFirstResponder()
-            passwordFeild.becomeFirstResponder()
+            var isValid = isValidEmail(emailFeild.text)
+            if isValid {
+                
+                emailFeild.resignFirstResponder()
+                passwordFeild.becomeFirstResponder()
+            }
+            else {
+                let alert = UIAlertController(title: "Hi", message: "Not a valid Email id.", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
         }
-        
         else
         {
-        passwordFeild.resignFirstResponder()
+            
+            if passwordFeild.text.isEmpty
+            {
+                let alert = UIAlertController(title: "Hi", message: "Password can't be empty.", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
+            else
+            {
+                passwordFeild.resignFirstResponder()
+                
+            }
+            
+            
             
         }
-        
-        
         return true
     }
     
 
-    
+    func isValidEmail(testStr:String) -> Bool {
+        // println("validate calendar: \(testStr)")
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluateWithObject(testStr)
+    }
     
     
 }

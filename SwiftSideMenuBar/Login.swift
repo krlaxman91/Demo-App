@@ -44,6 +44,9 @@ class Login: UIViewController , UITextFieldDelegate {
         
         loginButton.layer.cornerRadius = 4.0
         socialSharingButtonRound()
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -111,15 +114,33 @@ class Login: UIViewController , UITextFieldDelegate {
         if textField == emailTextFeild
             
         {
-            emailTextFeild.resignFirstResponder()
             
-            
-            passwordTextFeild.becomeFirstResponder()
+            var isValid = isValidEmail(emailTextFeild.text)
+            if isValid {
+                emailTextFeild.resignFirstResponder()
+                passwordTextFeild.becomeFirstResponder()
+            }
+            else {
+                let alert = UIAlertController(title: "Hi", message: "Not a valid Email id.", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
         }
         else
         {
+            var passwordLength = passwordTextFeild.text
+            
+            if passwordLength.isEmpty
+            {
+                let alert = UIAlertController(title: "Hi", message: "Password can't be empty.", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
+            else
+            {
             passwordTextFeild.resignFirstResponder()
-        }
+            }
+            }
         return true
     }
     
@@ -143,8 +164,9 @@ class Login: UIViewController , UITextFieldDelegate {
         return false
     }
 
+   
     
-    
+   //MARK: Validation
     
     func isValidEmail(testStr:String) -> Bool {
         // println("validate calendar: \(testStr)")
@@ -153,7 +175,5 @@ class Login: UIViewController , UITextFieldDelegate {
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluateWithObject(testStr)
     }
-    
-    
     
 }

@@ -13,7 +13,6 @@
 		4BCA10911B2963BC00909178 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA10901B2963BC00909178 /* Images.xcassets */; };
 		4BCA10941B2963BC00909178 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA10921B2963BC00909178 /* LaunchScreen.xib */; };
 		4BCA10A01B2963BC00909178 /* SwiftSideMenuBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA109F1B2963BC00909178 /* SwiftSideMenuBarTests.swift */; };
-		4BCA10AA1B296D1500909178 /* nature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA10A91B296D1500909178 /* nature.jpg */; };
 		4BCA10AC1B296EB800909178 /* SideMenuNavigationControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA10AB1B296EB800909178 /* SideMenuNavigationControllerViewController.swift */; };
 		4BCA10AE1B29701500909178 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA10AD1B29701500909178 /* SideMenu.swift */; };
 		4BCA10B01B2975DB00909178 /* MyNavigationControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA10AF1B2975DB00909178 /* MyNavigationControllerViewController.swift */; };
@@ -27,6 +26,8 @@
 		4BCA10C41B29A16000909178 /* loginImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA10C31B29A16000909178 /* loginImage.png */; };
 		4BCA10C61B29A2D900909178 /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA10C51B29A2D900909178 /* email.png */; };
 		4BCA10C81B29A2DE00909178 /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA10C71B29A2DE00909178 /* password.png */; };
+		4BE3E7E91B2AB538003C7DCB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BE3E7E81B2AB538003C7DCB /* Default@2x.png */; };
+		4BE3E7F11B2AB77E003C7DCB /* nature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BE3E7F01B2AB77E003C7DCB /* nature.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +51,6 @@
 		4BCA10991B2963BC00909178 /* SwiftSideMenuBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSideMenuBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BCA109E1B2963BC00909178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BCA109F1B2963BC00909178 /* SwiftSideMenuBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSideMenuBarTests.swift; sourceTree = "<group>"; };
-		4BCA10A91B296D1500909178 /* nature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = nature.jpg; path = ../../../../Desktop/nature.jpg; sourceTree = "<group>"; };
 		4BCA10AB1B296EB800909178 /* SideMenuNavigationControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuNavigationControllerViewController.swift; sourceTree = "<group>"; };
 		4BCA10AD1B29701500909178 /* SideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		4BCA10AF1B2975DB00909178 /* MyNavigationControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationControllerViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +64,8 @@
 		4BCA10C31B29A16000909178 /* loginImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginImage.png; sourceTree = "<group>"; };
 		4BCA10C51B29A2D900909178 /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
 		4BCA10C71B29A2DE00909178 /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password.png; sourceTree = "<group>"; };
+		4BE3E7E81B2AB538003C7DCB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4BE3E7F01B2AB77E003C7DCB /* nature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nature.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,11 +150,12 @@
 		4BCA10B91B29924900909178 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				4BE3E7F01B2AB77E003C7DCB /* nature.jpg */,
+				4BE3E7E81B2AB538003C7DCB /* Default@2x.png */,
 				4BCA10C71B29A2DE00909178 /* password.png */,
 				4BCA10C51B29A2D900909178 /* email.png */,
 				4BCA10BF1B299AD700909178 /* login.jpg */,
 				4BCA10B51B2978AD00909178 /* screen.png */,
-				4BCA10A91B296D1500909178 /* nature.jpg */,
 				4BCA10B31B29783200909178 /* menu.png */,
 			);
 			name = Image;
@@ -250,14 +253,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BCA10AA1B296D1500909178 /* nature.jpg in Resources */,
 				4BCA10B61B2978AD00909178 /* screen.png in Resources */,
 				4BCA10C81B29A2DE00909178 /* password.png in Resources */,
 				4BCA10B41B29783200909178 /* menu.png in Resources */,
 				4BCA108F1B2963BC00909178 /* Main.storyboard in Resources */,
+				4BE3E7E91B2AB538003C7DCB /* Default@2x.png in Resources */,
 				4BCA10941B2963BC00909178 /* LaunchScreen.xib in Resources */,
 				4BCA10C61B29A2D900909178 /* email.png in Resources */,
 				4BCA10C41B29A16000909178 /* loginImage.png in Resources */,
+				4BE3E7F11B2AB77E003C7DCB /* nature.jpg in Resources */,
 				4BCA10911B2963BC00909178 /* Images.xcassets in Resources */,
 				4BCA10C01B299AD700909178 /* login.jpg in Resources */,
 			);
@@ -483,6 +487,7 @@
 				4BCA10A51B2963BD00909178 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BCA10A61B2963BD00909178 /* Build configuration list for PBXNativeTarget "SwiftSideMenuBarTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +496,7 @@
 				4BCA10A81B2963BD00909178 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
